@@ -17,9 +17,9 @@ import sys
 
 try:
 	if len(sys.argv) == 1:
-	    while True:
-	        print("y")
-	output = " ".join(sys.argv[1:])
+	    output = 'y'
+	else:
+	    output = " ".join(sys.argv[1:])
 	while True:
 	    print(output)
 except KeyboardInterrupt:
